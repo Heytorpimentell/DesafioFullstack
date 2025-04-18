@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento de Automoveis</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Usuários</a>
+      <a href="plantations.html">Plantações</a>
+      <a href="automoveis.html">Automóveis</a>
+      <a href="ferramentas.html">Ferramentas</a>
+    </nav>
+
+    <h1>Adicionar Ferramentas</h1>
+    <button id="addFerramentaBtn">Adicionar Ferramenta</button>
+
+    <table id="ferramentasTable">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th>Responsável</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--Os plantações serão automoveis aqui via JS -->
+      </tbody>
+    </table>
+
+    <!-- Modal para adicionar/editar plantação -->
+    <div id="ferramentaModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitleFerramenta">Adicionar Automóvel</h2>
+        <form id="FerramentaForm">
+          <label for="nameFerramenta">Nome:</label>
+          <input type="text" id="nameFerramenta" name="name" required />
+
+          <label for="tipo">Tipo:</label>
+          <input type="text" id="tipo" name="tipo" required />
+
+          <label for="responsible">Responsável:</label>
+          <select id="responsible" name="responsible" required>
+            <!-- Os usuários serão carregados aqui via JS -->
+          </select>
+
+          <button type="submit" id="saveFerramentaBtn">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/ferramentas.js"></script>
+  </body>
+</html>
